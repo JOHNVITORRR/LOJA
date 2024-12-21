@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Minha Loja Virtual</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Minha Loja</h1>
+        </div>
+        <nav>
+            <nav>
+                <a href="{{url_for('pagina_inicial')}}"><button>Inicio</button></a>
+                <a href="{{url_for('segunda_pagina')}}"><button>Produto</button></a>
+                <a href="{{url_for('terceira_pagina')}}"><button>Carrinho</button></a>
+           </nav>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="produto" id="produto1">
+                <img src="https://cdn.shopify.com/s/files/1/0786/8206/3126/files/CamisaPoloModeloFashion_10_480x480_e97d5de6-1ba5-49ef-8897-6e7f0ca8e0b4_480x480.webp?v=1699828409" alt="Produto 1">
+                <h3>Camisa polo</h3>
+                <p>R$ 99,99</p>
+                <button class="add-to-cart" data-id="1">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto" id="produto2">
+                <img src="https://down-br.img.susercontent.com/file/sg-11134202-7rdw7-lzof52sqab1eaf" alt="Produto 2">
+                <h3>Camisa polo</h3>
+                <p>R$ 100,99</p>
+                <button class="add-to-cart" data-id="2">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto" id="produto3">
+                <img src="https://ae01.alicdn.com/kf/S582cd585d25d4d2ca5d687fef231e854p.jpg" alt="Produto 3">
+                <h3>Conjunto polo</h3>
+                <p>R$ 179,99</p>
+                <button class="add-to-cart" data-id="3">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja Virtual. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

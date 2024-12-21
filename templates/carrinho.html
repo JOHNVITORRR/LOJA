@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Minha Loja Virtual</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Minha Loja</h1>
+        </div>
+            <nav>
+                <a href="{{url_for('pagina_inicial')}}"><button>Inicio</button></a>
+                <a href="{{url_for('segunda_pagina')}}"><button>Produto</button></a>
+                <a href="{{url_for('terceira_pagina')}}"><button>Carrinho</button></a>
+            </nav>
+    </header>
+
+    <main>
+        <section class="carrinho">
+            <h2>Seu Carrinho de Compras</h2>
+            <ul id="cart-items">
+                <!-- Itens do carrinho serão exibidos aqui -->
+            </ul>
+            <div class="total">
+                <p>Total: R$ <span id="total-price">0,00</span></p>
+            </div>
+            <button id="finalizar-compra" disabled>Finalizar Compra</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja Virtual. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

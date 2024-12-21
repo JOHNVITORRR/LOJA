@@ -1,54 +1,140 @@
-*{
-    border: 0px;
-    padding: 0px;
-    margin: 0px;
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#header{
-    background-color: rgb(0, 0, 0);
-    z-index: 1;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
-#h1-header{
-    color: rgb(255, 255, 255);
-    font-size: arial;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 1px;
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.h3-header{
-    color: rgb(255, 255, 255);
-    font-size: arial;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 1px;
+
+header h1 {
+    font-size: 1.8rem;
 }
-.cabeçalho{
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: aliceblue;
-    
+    font-size: 1.2rem;
 }
-#navegação{
-    text-align: right;
-    padding-right: 10px;
-    word-spacing: 5px;
-    font-family: Arial;
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
-.selection-1{
-    background-color: rgb(0, 0, 0);
-    margin: 0 auto;
+
+/* Seção de Introdução (Home) */
+.intro {
     text-align: center;
-    width: 80%;
-    height: 175px;
-    border-radius: 12px;
-    color: rgb(255, 255, 255);
+    padding: 3rem;
 }
-.h1-selection{
-    font-family: arial;
-    font-size: 25px;
-    padding-top: 27px;
+
+/* Produtos */
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
 }
-.p1{
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+
+.produto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin: 1rem 0;
+}
+
+button.add-to-cart {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.add-to-cart:hover {
+    background-color: #555;
+}
+
+/* Carrinho de Compras */
+.carrinho {
+    padding: 2rem;
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#cart-items li {
+    margin: 0.5rem 0;
+}
+
+.total {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Botões */
+button {
+    padding: 0.7rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

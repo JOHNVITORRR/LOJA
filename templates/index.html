@@ -1,45 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Masculina</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <title>Minha Loja Virtual</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
-    <header . id="header">
-        <h1 . id = "h1-header">Loja Masculina</h1>
-        <h3 . class="h3-header">A sua loja com o menor preço</h3>
 
-        <nav id="navegação">
-            <a class="cabeçalho" href="{{url_for('primeira_pagina')}}">Inicio</a>
-            <a class="cabeçalho" href="{{url_for('primeira_pagina')}}">Camissas</a>
-            <a class="cabeçalho" href="{{url_for('primeira_pagina')}}">Calças</a>
-        </nav>
-    </header>
-    <br>
-    <br>
-    <br>
-    <section class="selection-1">
-        <h2 class="h1-selection"> Ropas masculina com os melhores preços</h2>
-        <p class="p1"> Diverssos modelos aparti de R$ 39,99</p>
-        <p class="p1"> Com entrega gratis</p>
-    </section>
-
-    <br>
-    <br>
-    <br>
-
-    <section class="selection-2" id="selection-grid">
-
-        <div class="grid">
-            <div class="sub-grid">
-                <h2 class="h2-sub"> Nome </h2>
-                <img class="imagem" src="" alt="">
-                <p class="p-preços">precos</p>
-                <button class="botao">pedir</button>
+    <header>
+        <div class="logo">
+            <h1>Minha Loja</h1>
         </div>
+            <nav>
+                 <a href="{{url_for('pagina_inicial')}}"><button>Inicio</button></a>
+                 <a href="{{url_for('segunda_pagina')}}"><button>Produto</button></a>
+                 <a href="{{url_for('terceira_pagina')}}"><button>Carrinho</button></a>
+            </nav>
+    </header>
 
-    </section>
+    <main>
+        <section class="intro">
+            <h2>Bem-vindo à Minha Loja Virtual!</h2>
+            <p>Confira nossos produtos e aproveite as melhores ofertas.</p>
+            <form action="/produto">
+                <button type="submit">Ver produtos</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja Virtual. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
